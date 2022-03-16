@@ -5,7 +5,7 @@ echo "Making pre-invocation changes..."
 rc=$?
  if [ $rc -eq 0 ]; then
    echo "Making post-invocation changes..."
-   echo $(date '+%F %T') > /var/www/html/date.html
+   echo $(date '+%F %T') > ./date.html
  else
    echo "Error: assemble failed!"
  fi
