@@ -15,7 +15,7 @@ MAINTAINER Oscar Ballesteros oballest@redhat.com
 
 ENV DOCROOT=/var/www/html
 
-RUN yum install -y --no-docs --disableplugin=subscription-manager httpd && \
+RUN yum install -y --disableplugin=subscription-manager httpd && \
     yum clean all --disableplugin=subscription-manager -y && \
     rm -rf /run/httpd && mkdir /run/httpd && \
     echo "Hello from the httpd container!" > ${DOCROOT}/index.html
