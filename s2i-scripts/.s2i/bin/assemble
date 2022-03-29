@@ -3,6 +3,6 @@ echo "Antes de ejecutar assemble"
 /usr/libexec/s2i/assemble
 rc=$?
 
-echo $(date '+%F %T') > /var/www/html/date.html
+echo $(date '+%F %T') > ./date.html
 
 exit $rc
